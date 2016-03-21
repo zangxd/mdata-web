@@ -21,15 +21,8 @@ let getEntries= (globPath, pathDir) => {
 	let entries = {}, filename;
 
   entryFiles.forEach((filePath) => {
-		// dirname = path.dirname(filePath);
-		// extname = path.extname(filePath);
-		// filename = path.basename(filePath, extname);
-		// pathname = path.join(dirname, basename);
-		// pathname = pathDir ? pathname.replace(new RegExp('^' + pathDir), '') : pathname;
-
 		filename = filePath.substring(filePath.lastIndexOf('\/') + 1, filePath.lastIndexOf('.'));
 		entries[filename] = './' + filePath;
-		console.log('./' + filePath);
   });
 
 	return entries;
