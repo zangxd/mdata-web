@@ -1,5 +1,5 @@
 /node_modules
-/assets
+/static
 /.sass-cache
 ./npm-debug.log
 .DS_Store

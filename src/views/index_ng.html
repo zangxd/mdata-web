@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NG</title>
+</head>
+<body ng-app="myApp">
+  <div class="g-hd"></div>
+	<div class="g-bd" ng-controller="myCtrl">
+    <div class="g-userInfo-update">
+      <input type="text" ng-model="user.name">
+    </div>
+    <div class="g-userInfo" >
+      <p>name:{{user.name}}</p>
+      <p>name:{{user.github}}</p>
+    </div>
+	</div>
+	<div class="g-ft"></div>
+</body>
+</html>
