@@ -59,7 +59,7 @@ let plugins = () => {
 	});
 
 	return r;
-}();
+};
 
 let config = {
 	entry:entries,
@@ -108,7 +108,7 @@ let config = {
 		}),
 		new webpack.HotModuleReplacementPlugin() //热加载
 
-	].concat(plugins),
+	].concat(plugins()),
 
 	// webpack-dev-server配置
 	devServer: {
